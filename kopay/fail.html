@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>결제 실패 — 우동짐</title>
+<style>
+  :root{ --red:#A32D2D; --text:#1A1A18; --gray:#6B6A65; --teal:#0F6E56; }
+  body{ margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+        background:#fff; color:var(--text); text-align:center; padding:24px;
+        font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif; }
+  .mark{ width:72px; height:72px; border-radius:50%; background:#FCEBEB; margin:0 auto 20px;
+         display:flex; align-items:center; justify-content:center; color:var(--red);
+         font-size:34px; font-weight:700; }
+  h1{ font-size:22px; margin:0 0 10px; }
+  p{ color:var(--gray); font-size:15px; line-height:1.7; margin:0; }
+  a{ color:var(--teal); }
+  #msg{ margin-top:14px; font-size:14px; color:var(--red); }
+</style>
+</head>
+<body>
+  <div>
+    <div class="mark">!</div>
+    <h1>결제가 완료되지 않았습니다</h1>
+    <p>결제가 취소되었거나 승인에 실패했습니다.<br>
+       우동짐 앱에서 다시 시도해 주세요. <strong>요금은 청구되지 않습니다.</strong></p>
+    <div id="msg"></div>
+    <p style="margin-top:18px; font-size:13px;">
+      문의: <a href="mailto:prime@inspace.re.kr">prime@inspace.re.kr</a>
+    </p>
+  </div>
+<script>
+  var m = new URLSearchParams(location.search).get('message');
+  if (m) document.getElementById('msg').textContent = m;
+</script>
+</body>
+</html>
