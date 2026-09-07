@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>우동짐 — 전국 헬스장을 이용권 하나로</title>
+<meta name="description" content="우동짐은 전국 가맹 헬스장의 이용권(시간권·일일권·월권)을 앱에서 구매하고 QR로 입장하는 서비스입니다. 약정 없이 필요할 때만.">
+<meta property="og:title" content="우동짐 — 전국 헬스장을 이용권 하나로">
+<meta property="og:description" content="약정 없이 필요할 때만. 이용권 구매 후 QR로 입장하세요.">
+<meta property="og:type" content="website">
+<style>
+  :root{ --teal:#0F6E56; --teal-d:#0B5643; --mint:#9FE1CB; --text:#1A1A18;
+         --gray:#6B6A65; --line:#E5E4E0; --bg:#FFFFFF; --soft:#F5F5F3; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; color:var(--text); background:var(--bg); line-height:1.7;
+        font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',sans-serif; }
+  a{ color:var(--teal); }
+  .wrap{ max-width:880px; margin:0 auto; padding:0 20px; }
+
+  header{ background:var(--teal); color:#fff; }
+  .nav{ display:flex; align-items:center; justify-content:space-between; padding:18px 0; }
+  .brand{ display:flex; align-items:center; gap:10px; font-weight:700; font-size:19px; }
+  .dumb{ width:30px; height:30px; }
+  .nav a{ color:#fff; text-decoration:none; font-size:14px; opacity:.9; margin-left:16px; }
+  .nav a:hover{ opacity:1; text-decoration:underline; }
+
+  .hero{ padding:56px 0 64px; text-align:center; }
+  .hero h1{ font-size:38px; line-height:1.35; margin:0 0 14px; font-weight:800; }
+  .hero p{ font-size:17px; color:var(--mint); margin:0 0 30px; }
+  .btn{ display:inline-block; background:#fff; color:var(--teal); font-weight:700;
+        padding:14px 28px; border-radius:10px; text-decoration:none; font-size:16px; }
+  .btn:hover{ background:#EAF5F1; }
+
+  section{ padding:52px 0; border-bottom:1px solid var(--line); }
+  h2{ font-size:22px; margin:0 0 20px; font-weight:700; }
+  .feat{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; }
+  .card{ border:1px solid var(--line); border-radius:14px; padding:20px; background:var(--bg); }
+  .card h3{ margin:0 0 8px; font-size:16px; }
+  .card p{ margin:0; color:var(--gray); font-size:14px; }
+
+  .steps{ counter-reset:s; padding-left:0; list-style:none; margin:0; }
+  .steps li{ counter-increment:s; position:relative; padding:10px 0 10px 44px; }
+  .steps li::before{ content:counter(s); position:absolute; left:0; top:10px;
+      width:28px; height:28px; border-radius:50%; background:var(--teal); color:#fff;
+      display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; }
+
+  table{ width:100%; border-collapse:collapse; font-size:14px; }
+  th,td{ border:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top; }
+  th{ background:var(--soft); width:180px; font-weight:600; color:var(--gray); }
+
+  footer{ background:var(--soft); padding:36px 0 48px; font-size:13px; color:var(--gray); }
+  footer a{ color:var(--gray); }
+  .flinks{ margin-bottom:14px; }
+  .flinks a{ margin-right:14px; }
+  .muted{ color:#9C9A92; font-size:12px; margin-top:16px; }
+  @media(max-width:600px){ .hero h1{ font-size:28px; } th{ width:120px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <svg class="dumb" viewBox="0 0 100 100" aria-hidden="true">
+          <rect x="18" y="30" width="13" height="40" rx="6" fill="#fff"/>
+          <rect x="69" y="30" width="13" height="40" rx="6" fill="#fff"/>
+          <rect x="31" y="43" width="38" height="14" rx="7" fill="#fff"/>
+        </svg>
+        우동짐
+      </div>
+      <nav>
+        <a href="#service">서비스</a>
+        <a href="#guide">이용안내</a>
+        <a href="support.html">고객지원</a>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <h1>전국 헬스장을<br>이용권 하나로</h1>
+      <p>약정 없이, 필요할 때만</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=re.inspace.woodonggym">Google Play에서 설치</a>
+    </div>
+  </div>
+</header>
+
+<section id="service">
+  <div class="wrap">
+    <h2>우동짐이란</h2>
+    <p style="color:var(--gray); margin-top:-8px;">
+      우동짐은 전국 가맹 헬스장의 이용권을 앱에서 구매하고, 헬스장 입구의 QR을 스캔해 입장하는
+      서비스입니다. 장기 약정이나 등록비 없이 필요한 만큼만 이용할 수 있습니다.
+    </p>
+    <div class="feat" style="margin-top:22px;">
+      <div class="card">
+        <h3>내 주변 가맹 헬스장</h3>
+        <p>지도에서 전국 우동짐 가맹 헬스장을 찾고 이용권 가격을 바로 확인하세요.</p>
+      </div>
+      <div class="card">
+        <h3>시간권 · 일일권 · 월권</h3>
+        <p>필요한 이용권을 골라 결제하면 즉시 발급됩니다. 약정도, 등록비도 없습니다.</p>
+      </div>
+      <div class="card">
+        <h3>QR 한 번으로 입장</h3>
+        <p>헬스장 입구 QR을 스캔하면 입장 완료. 입장 시 추가 결제는 없습니다.</p>
+      </div>
+      <div class="card">
+        <h3>운동 기록 자동 저장</h3>
+        <p>이용한 헬스장과 운동 시간이 앱에 자동으로 기록됩니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <h2>이용 방법</h2>
+    <ol class="steps">
+      <li>앱을 설치하고 카카오·구글·Apple 계정으로 로그인합니다.</li>
+      <li>지도에서 가까운 우동짐 가맹 헬스장을 선택합니다.</li>
+      <li>시간권·일일권·월권 중 필요한 이용권을 구매합니다.</li>
+      <li>헬스장 입구의 QR을 스캔해 입장합니다. (추가 결제 없음)</li>
+      <li>운동을 마치면 앱에서 '운동 마침'을 누릅니다.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="payment">
+  <div class="wrap">
+    <h2>결제 및 환불 안내</h2>
+    <table>
+      <tr><th>결제 수단</th><td>신용·체크카드 (카드사 인증 결제)</td></tr>
+      <tr><th>결제 방식</th><td>이용권 구매 시 1회 결제됩니다. 입장·이용 시 추가 결제는 없습니다.</td></tr>
+      <tr><th>카드 정보</th><td>카드 정보는 앱에 저장하지 않으며, 결제대행사가 안전하게 처리합니다.</td></tr>
+      <tr><th>환불 기준</th><td>사용하지 않은 이용권은 구매 후 7일 이내 전액 환불됩니다.
+        이미 입장에 사용한 이용권은 환불이 제한될 수 있습니다.</td></tr>
+      <tr><th>환불 신청</th><td>아래 고객지원 이메일로 접수해 주세요. 영업일 기준 1~2일 내 처리됩니다.</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="business">
+  <div class="wrap">
+    <h2>사업자 정보</h2>
+    <table>
+      <tr><th>상호</th><td>이은 네트워크</td></tr>
+      <tr><th>대표자</th><td>노유미</td></tr>
+      <tr><th>사업자등록번호</th><td>436-01-02989</td></tr>
+      <tr><th>주소</th><td>대전광역시 유성구 온천로107번길 19, 801호(봉명동)</td></tr>
+      <tr><th>연락처</th><td>010-5397-3443</td></tr>
+      <tr><th>이메일</th><td><a href="mailto:prime@inspace.re.kr">prime@inspace.re.kr</a></td></tr>
+      <tr><th>개인정보 보호책임자</th><td>노유미</td></tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="flinks">
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="support.html">고객지원</a>
+      <a href="https://play.google.com/store/apps/details?id=re.inspace.woodonggym">Google Play</a>
+    </div>
+    이은 네트워크 · 대표 노유미 · 사업자등록번호 436-01-02989<br>
+    대전광역시 유성구 온천로107번길 19, 801호(봉명동) · 010-5397-3443 · prime@inspace.re.kr
+    <div class="muted">© 2026 우동짐 (이은 네트워크). All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
